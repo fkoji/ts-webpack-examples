@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -14,7 +14,7 @@
 /*!*********************!*\
   !*** ./src/main.ts ***!
   \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sub */ \"./src/sub.ts\");\n\nvar message = 'Hello world';\n(0,_sub__WEBPACK_IMPORTED_MODULE_0__.hello)(message);\nwindow.addEventListener(\"load\", function () {\n    alert(\"InternetExplorer\");\n});\n\n\n//# sourceURL=webpack://ts-webpack-examples/./src/main.ts?");
 
@@ -24,9 +24,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sub
 /*!********************!*\
   !*** ./src/sub.ts ***!
   \********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hello\": () => /* binding */ hello,\n/* harmony export */   \"piyo\": () => /* binding */ piyo\n/* harmony export */ });\nvar hello = function (message) {\n    log(message);\n};\nfunction log(message) {\n    document.body.innerHTML = \"\" + message;\n    console.log(message + \"\\u3092\\u51FA\\u529B\\u3057\\u307E\\u3057\\u305F\");\n}\nfunction piyo() { }\n\n\n//# sourceURL=webpack://ts-webpack-examples/./src/sub.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hello\": function() { return /* binding */ hello; },\n/* harmony export */   \"piyo\": function() { return /* binding */ piyo; }\n/* harmony export */ });\nvar hello = function (message) {\n    log(message);\n};\nfunction log(message) {\n    document.body.innerHTML = \"\" + message;\n    console.log(message + \"\\u3092\\u51FA\\u529B\\u3057\\u307E\\u3057\\u305F\");\n}\nfunction piyo() { }\n\n\n//# sourceURL=webpack://ts-webpack-examples/./src/sub.ts?");
 
 /***/ })
 
@@ -57,32 +57,32 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => Object.prototype.hasOwnProperty.call(obj, prop)
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__webpack_require__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 /******/ 	// startup
